@@ -1,4 +1,4 @@
-# JSON Data reading
+# JSON Data Reader
 
 ### Tech Stack:
 HTML, CSS & Javascript
