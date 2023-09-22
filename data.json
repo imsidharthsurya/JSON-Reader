@@ -1,0 +1,66 @@
+{
+                    "abi@gmail.com":{
+                            "firstName": "Abhishek",
+                            "lastName": "Verma",
+                            "mobile": "9012345678",
+                            "age": 25,
+                            "isadult":true,
+                            "city": "Delhi"
+                },
+                "babu@gmail.com":{
+                        "firstName": "Babujsdkjsdakfja",
+                            "lastName": "Annam",
+                            "mobile": "1012345678",
+                            "age": 20,
+                            "city": "Hyderabad"
+                },
+                "chitra@gmail.com":{
+                            "firstName": "Chitra",
+                            "lastName": "Kumar",
+                            "mobile": "2012345678",
+                            "age": 22,
+                            "city": "Bangallore"
+                },
+                "deepa@gmail.com":{
+                            "firstName": "Deepa",
+                            "lastName": "Verma",
+                            "mobile": "3012345678",
+                            "age": 27,
+                            "city": "Chennai"
+                },
+                "imsid@gmail.com":{
+                            "firstName": "sid",
+                            "lastName": "Verma",
+                            "mobile": "9012345678",
+                            "age": 18,
+                            "city": "Patna"
+                },
+                "adi@gmail.com":{
+                            "firstName": "Aditya",
+                            "lastName": "Sharma",
+                            "mobile": "30190245678",
+                            "age": 23,
+                            "city": "Pune"
+                },
+                "vaibhav@gmail.com":{
+                            "firstName": "vaibhav",
+                            "lastName": "yadav",
+                            "mobile": "8012345678",
+                            "age": 21,
+                            "city": "Prayagraj"
+                },
+                "tempo@gmail.com":{
+                            "firstName": "xyz",
+                            "lastName": "kpt",
+                            "mobile": "8012345678",
+                            "age": 21,
+                            "city": "Prayagraj"
+                },
+                "chitra76@gmail.com":{
+                    "firstName": "Chitra temp",
+                    "lastName": "Kumar",
+                    "mobile": "2012345678",
+                    "age": 22,
+                    "city": "Bangallore"
+        }
+            }

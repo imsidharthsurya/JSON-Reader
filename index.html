@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                color: white;
+                margin: 0;
+            }
+            .even{
+                background-color: blue;
+                padding: 20px;
+            }
+            .odd{
+                background-color: black;
+                padding: 20px;
+            }
+            .data{
+                padding: 20px 40px;
+            }
+            
+        </style>
+    </head>
+    <body onload="loadData()">
+<center>        <h1 style="color: black;">Student Details</h1></center>
+       <div id="main">
+
+       </div> 
+        <script>
+            function showData(res){
+                var temp=JSON.parse(res);
+               
+               // console.log(Object.keys(temp));
+               var k=Object.keys(temp);
+                for(var i=0;i<k.length;i++)
+                {
+                    if(i%2==0){
+                        var buffer1="<div class='even'>";
+                        buffer1+="<span class='data'>"+temp[k[i]].firstName+"</span>";
+                        buffer1+="<span class='data'>"+temp[k[i]].lastName+"</span>";
+                        buffer1+="<span class='data'>"+temp[k[i]].mobile+"</span>";
+                        buffer1+="<span class='data'>"+temp[k[i]].age+"</span>";
+                        buffer1+="<span class='data'>"+temp[k[i]].city+"</span>";
+                        buffer1+="</div>";
+                        document.getElementById("main").innerHTML+=buffer1;
+                    }else{
+                        var buffer2="<div class='odd'>";
+                        buffer2+="<span class='data'>"+temp[k[i]].firstName+"</span>";
+                        buffer2+="<span class='data'>"+temp[k[i]].lastName+"</span>";
+                        buffer2+="<span class='data'>"+temp[k[i]].mobile+"</span>";
+                        buffer2+="<span class='data'>"+temp[k[i]].age+"</span>";
+                        buffer2+="<span class='data'>"+temp[k[i]].city+"</span>";
+                        buffer2+="</div>";
+                        document.getElementById("main").innerHTML+=buffer2;
+                    }
+                    
+                    
+                }
+               console.log(temp["abi@gmail.com"].firstName);
+
+            }
+            function loadData(){
+                var xhttp=new XMLHttpRequest();
+                xhttp.onreadystatechange=function(){
+                    if(this.readyState==4 && this.status==200)
+                    {
+                       showData(this.responseText);
+                    }
+                }
+
+
+                xhttp.open('GET','data.json',true);
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>
